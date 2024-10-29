@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Our Project</title>
+    <style>
+        body {
+            height: 100vh; /* Full viewport height */
+            width: 100vw; 
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #121212;
+            font-family: Arial, sans-serif;
+            overflow: hidden; /* Prevent overflow */
+        }
+
+        .login-container {
+            background-color: #1e1e1e;
+            border-radius: 10px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7);
+            padding: 40px;
+            width: 400px; /* Fixed width for the login form */
+            text-align: center;
+        }
+
+        h1 {
+            color: #00ff00;
+            margin-bottom: 20px; /* Space below the heading */
+            font-size: 2rem; /* Larger heading size */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Text shadow for depth */
+        }
+
+        input[type="email"],
+        input[type="password"] {
+            width: 100%; /* Full width */
+            padding: 10px; /* Padding inside the input */
+            margin: 10px 0; /* Space between inputs */
+            border: 1px solid #00ff00; /* Border color */
+            border-radius: 5px; /* Rounded corners */
+            background-color: #ffffff; /* White background for inputs */
+            color: #333; /* Dark text color */
+            font-size: 1rem; /* Font size for inputs */
+        }
+
+        input[type="submit"] {
+            background-color: #00ff00; /* Green background for button */
+            color: #121212; /* Dark text color for button */
+            border: none; /* No border */
+            border-radius: 5px; /* Rounded corners */
+            padding: 10px;
+            cursor: pointer; /* Pointer cursor on hover */
+            font-size: 1.1rem; /* Larger font size for button */
+            transition: background-color 0.3s; /* Smooth transition for hover */
+        }
+
+        input[type="submit"]:hover {
+            background-color: #00cc00; /* Darker green on hover */
+        }
+
+        @media (max-width: 768px) {
+            .login-container {
+                width: 90%; /* Full width on smaller screens */
+            }
+
+            h1 {
+                font-size: 1.5rem; /* Smaller heading on mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Login</h1>
+        <form>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+</body>
+</html>

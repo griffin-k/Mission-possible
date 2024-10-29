@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Our Team</title>
+    <style>
+        body {
+            height: auto; /* Flexible height */
+            width: 100vw; 
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #121212;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+            flex-direction: column;
+            padding: 20px; /* Added padding for better layout */
+        }
+
+        h1 {
+            color: #00ff00;
+            text-align: center;
+            margin: 20px 0;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Text shadow for depth */
+        }
+
+        .intro {
+            color: #ffffff; /* Text color for the intro */
+            text-align: center; /* Center the intro text */
+            margin-bottom: 40px; /* Space below the intro */
+            font-size: 1.2rem; /* Slightly larger font size for intro */
+            max-width: 800px; /* Limit width for better readability */
+            padding: 0 20px; /* Padding for intro text */
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            padding: 40px;
+            border-radius: 10px;
+            background-color: #1e1e1e;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7); /* Enhanced shadow effect */
+            margin: 10px 0; /* Margin for spacing */
+            flex-wrap: wrap;
+            justify-content: center; /* Center the team cards */
+        }
+
+        .card {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            width: 220px; /* Adjust card width */
+            padding: 15px;
+            margin: 15px; /* Space between cards */
+            transition: all 0.3s;
+            overflow: hidden;
+            text-align: center; /* Center the text */
+            border: 1px solid #00ff00; /* Border color for the card */
+            position: relative; /* Position for shadow effect */
+        }
+
+        .card img {
+            width: 100px; /* Set image size */
+            height: 100px; /* Set image size */
+            border-radius: 50%; /* Make the image circular */
+            margin-bottom: 10px; /* Space below the image */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow for image */
+        }
+
+        .card h3 {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #333; /* Darker text color */
+        }
+
+        .card p {
+            font-size: 14px;
+            margin: 0;
+            color: #666; /* Lighter text color */
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column; /* Stack elements vertically on smaller screens */
+                align-items: center; /* Center align items */
+            }
+
+            h1 {
+                font-size: 2rem; /* Smaller heading on smaller screens */
+            }
+
+            .intro {
+                font-size: 1rem; /* Smaller intro font on mobile */
+                padding: 0 10px; /* Reduced padding */
+            }
+
+            .card {
+                width: 90%; /* Full width for cards on mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>About Us</h1>
+    <div class="intro">
+        <p>Welcome to our project! We are dedicated to creating innovative solutions that enhance user experiences through technology. Our team consists of skilled professionals who are passionate about what they do, and we are excited to share our journey with you.</p>
+    </div>
+    <div class="container">
+        <div class="card">
+            <img src="img/member1.jpg" alt="Team Member 1"> <!-- Replace with actual image path -->
+            <h3>John Doe</h3>
+            <p>Position: Team Lead</p>
+        </div>
+        <div class="card">
+            <img src="img/member2.jpg" alt="Team Member 2"> <!-- Replace with actual image path -->
+            <h3>Jane Smith</h3>
+            <p>Position: Developer</p>
+        </div>
+        <div class="card">
+            <img src="img/member3.jpg" alt="Team Member 3"> <!-- Replace with actual image path -->
+            <h3>Michael Johnson</h3>
+            <p>Position: Designer</p>
+        </div>
+    </div>
+</body>
+</html>
