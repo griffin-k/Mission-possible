@@ -33,7 +33,7 @@
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Text shadow for depth */
         }
 
-        input[type="email"],
+        input[type="text"],
         input[type="password"] {
             width: 100%; /* Full width */
             padding: 10px; /* Padding inside the input */
@@ -75,7 +75,7 @@
     <div class="login-container">
         <h1>Login</h1>
         <form id="loginForm">
-            <input  id="email" placeholder="Email" required>
+            <input type="text" id="username" placeholder="Username" required>
             <input type="password" id="password" placeholder="Password" required>
             <input type="submit" value="Login">
         </form>
@@ -85,7 +85,7 @@
         document.getElementById("loginForm").addEventListener("submit", function(event) {
             event.preventDefault();
 
-            var username = document.getElementById("email").value;
+            var username = document.getElementById("username").value;  // Change "email" to "username"
             var password = document.getElementById("password").value;
 
             // Check if username and password are correct
