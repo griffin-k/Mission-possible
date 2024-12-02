@@ -55,7 +55,7 @@ This project demonstrates a **Flood Relief Drone** designed to assist in disaste
 ### Steps  
 1. **Clone the Repository**  
    ```bash
-   git clone https://github.com/your-username/flood-relief-drone.git
+   git clone https://github.com/griffin-k/flood-relief-drone.git
    cd flood-relief-drone
 
 Set Up Firebase Configuration
